@@ -1,4 +1,4 @@
-import ProductList from "../features/product/ProductList";
+import Products from "../features/product/Products";
 import Footer from "../ui/Footer";
 import Hero from "../ui/Hero";
 import Navbar from "../ui/Navbar";
@@ -8,7 +8,7 @@ function HomePage() {
     <div>
       <Navbar />
       <Hero />
-      <ProductList />
+      <Products />
       <Footer />
     </div>
   );
