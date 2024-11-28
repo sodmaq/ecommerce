@@ -19,7 +19,7 @@ function Hero() {
       <div className="grid md:grid-cols-2 items-center md:gap-8 gap-6 font-[sans-serif] max-w-5xl max-md:max-w-md mx-auto">
         <div className="max-md:order-1 max-md:text-center">
           <h2 className="md:text-4xl text-3xl md:leading-10 font-extrabold text-gray-800 mb-4 font-sans">
-            Quick<span className="text-[#3532f0] font-libre">Buy</span>
+            Quick<span className="text-[#3532f0]">Buy</span>
           </h2>
           <p className="mt-4 text-base text-gray-600 leading-relaxed font-libre">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
