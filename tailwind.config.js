@@ -8,6 +8,15 @@ const config = {
       fontFamily: {
         libre: ['"Libre Baskerville"', "serif"],
       },
+      keyframes: {
+        fade: {
+          "0%, 100%": { opacity: "0" },
+          "50%": { opacity: "1" },
+        },
+        animation: {
+          fade: "fade 2s ease-in-out infinite", // 2 seconds for each fade cycle
+        },
+      },
     },
   },
   plugins: [flowbite.plugin()],

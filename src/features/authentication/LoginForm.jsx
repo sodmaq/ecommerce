@@ -1,15 +1,13 @@
+import { RxSketchLogo } from "react-icons/rx";
+
 function LoginForm() {
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="container px-6 py-24 mx-auto lg:py-32">
         <div className="lg:flex flex-col items-center">
-          <div className="lg:w-1/2">
-            <img
-              className="w-auto h-7 sm:h-8"
-              src="https://merakiui.com/images/logo.svg"
-              alt="Logo"
-            />
-            <h1 className="mt-4 text-gray-600 dark:text-gray-300 md:text-lg">
+          <div className="lg:w-1/2 ml-[20%]">
+            <RxSketchLogo className="w-10 h-10" color="blue" />
+            <h1 className="mt-4 text-gray-600 dark:text-gray-300 md:text-lg ">
               Welcome back
             </h1>
             <h1 className="mt-4 text-2xl font-medium text-gray-800 capitalize lg:text-3xl lg:mb-6  dark:text-white">
