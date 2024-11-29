@@ -1,33 +1,28 @@
-import { useState, useCallback } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { GiShoppingCart } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
 import { MdFavoriteBorder } from "react-icons/md";
 import { RxHamburgerMenu, RxSketchLogo } from "react-icons/rx";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Toggle menu visibility with useCallback
-  const handleToggleMenu = useCallback(() => {
-    setIsMenuOpen((prev) => !prev);
-  }, []);
-
-  // Close menu and navigate
-  const handleNavigation = useCallback(() => {
-    setIsMenuOpen(false);
-  }, []);
+  // Toggle menu visibility
+  const handleToggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <div>
       <header className="flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative z-50">
         <div className="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
           {/* Logo */}
-          <NavLink to="/" onClick={handleNavigation} className="cursor-pointer">
-            <RxSketchLogo className="w-10 h-10" color="blue" />
-          </NavLink>
+          <a onClick={() => navigate("/")}>
+            <RxSketchLogo className="w-10 h-10 cursor-pointer" color="blue" />
+          </a>
 
           {/* Collapsible Menu */}
           <div
@@ -47,72 +42,57 @@ function Navbar() {
 
             <ul className="lg:flex lg:gap-x-3 max-lg:space-y-3">
               <li className="mb-6 hidden max-lg:block">
-                <NavLink to="/" onClick={handleNavigation} className="block">
+                <a onClick={() => navigate("/")}>
                   <RxSketchLogo
                     className="w-10 h-10 cursor-pointer"
                     color="blue"
                   />
-                </NavLink>
+                </a>
               </li>
               <li className="max-lg:border-b max-lg:py-3 px-3">
-                <NavLink
-                  to="/"
-                  onClick={handleNavigation}
-                  className={({ isActive }) =>
-                    `text-[15px] block font-semibold cursor-pointer ${
-                      isActive
-                        ? "text-[#007bff]"
-                        : "text-[#333] hover:text-[#007bff]"
-                    }`
-                  }
+                <a
+                  onClick={() => {
+                    navigate("/");
+                    setIsMenuOpen(false);
+                  }}
+                  className="text-[#007bff] hover:text-[#007bff] text-[15px] block font-semibold cursor-pointer"
                 >
                   Home
-                </NavLink>
+                </a>
               </li>
               <li className="max-lg:border-b max-lg:py-3 px-3">
-                <NavLink
-                  to="/about"
-                  onClick={handleNavigation}
-                  className={({ isActive }) =>
-                    `text-[15px] block font-semibold cursor-pointer ${
-                      isActive
-                        ? "text-[#007bff]"
-                        : "text-[#333] hover:text-[#007bff]"
-                    }`
-                  }
+                <a
+                  onClick={() => {
+                    navigate("/about");
+                    setIsMenuOpen(false);
+                    console.log(isMenuOpen);
+                  }}
+                  className="text-[#333] hover:text-[#007bff] text-[15px] block font-semibold cursor-pointer"
                 >
                   About
-                </NavLink>
+                </a>
               </li>
               <li className="max-lg:border-b max-lg:py-3 px-3">
-                <NavLink
-                  to="/contact"
-                  onClick={handleNavigation}
-                  className={({ isActive }) =>
-                    `text-[15px] block font-semibold cursor-pointer ${
-                      isActive
-                        ? "text-[#007bff]"
-                        : "text-[#333] hover:text-[#007bff]"
-                    }`
-                  }
+                <a
+                  onClick={() => {
+                    navigate("/contact");
+                    setIsMenuOpen(false);
+                  }}
+                  className="text-[#333] hover:text-[#007bff] text-[15px] block font-semibold cursor-pointer"
                 >
                   Contact
-                </NavLink>
+                </a>
               </li>
               <li className="max-lg:border-b max-lg:py-3 px-3">
-                <NavLink
-                  to="/blog"
-                  onClick={handleNavigation}
-                  className={({ isActive }) =>
-                    `text-[15px] block font-semibold cursor-pointer ${
-                      isActive
-                        ? "text-[#007bff]"
-                        : "text-[#333] hover:text-[#007bff]"
-                    }`
-                  }
+                <a
+                  onClick={() => {
+                    navigate("/blog");
+                    setIsMenuOpen(false);
+                  }}
+                  className="text-[#333] hover:text-[#007bff] text-[15px] block font-semibold cursor-pointer"
                 >
                   Blog
-                </NavLink>
+                </a>
               </li>
             </ul>
           </div>

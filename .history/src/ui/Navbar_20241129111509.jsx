@@ -59,7 +59,7 @@ function Navbar() {
                   to="/"
                   onClick={handleNavigation}
                   className={({ isActive }) =>
-                    `text-[15px] block font-semibold cursor-pointer ${
+                    `text-[15px] block font-semibold cursor-pointer block ${
                       isActive
                         ? "text-[#007bff]"
                         : "text-[#333] hover:text-[#007bff]"

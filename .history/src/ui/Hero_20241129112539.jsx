@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 function Hero() {
-  const navigate = useNavigate();
   const images = [
     "/landing.jpg", // Replace with your image paths
     "/landing2.jpg",
@@ -36,14 +34,13 @@ function Hero() {
             <a
               href=""
               className="px-6 py-3 text-base font-semibold text-white bg-[#3532f0] rounded-full hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105 focus:ring-2 focus:ring-[#3532f0]] focus:outline-none focus:ring-opacity-50"
-              onClick={() => navigate("/products")}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
               Explore Our Products
             </a>
             <a
               href=""
               className="px-6 py-3 text-base font-semibold text-[#3532f0] border border-[#3532f0]] rounded-full hover:text-white hover:bg-[#3532f0] transition-all duration-300 transform hover:scale-105 focus:ring-2 focus:ring-[#3532f0] focus:outline-none focus:ring-opacity-50"
-              onClick={() => navigate("/order")}
             >
               Order Now
             </a>

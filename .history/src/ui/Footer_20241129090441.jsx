@@ -22,32 +22,35 @@ function Footer() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             gravida, mi eu pulvinar cursus, sem elit interdum mauris dipiscing
             elit. Aenean gravida, mi eu pulvinar cursus.{" "}
-            <a href="" className="text-sm font-semibold text-blue-500">
+            <a
+              href="javascript:void(0)"
+              className="text-sm font-semibold text-blue-500"
+            >
               Read more...
             </a>
           </p>
 
           <ul className="flex items-center justify-center flex-wrap gap-y-3 gap-x-6 mt-8">
             <li>
-              <a href="">
+              <a href="javascript:void(0)">
                 <FaFacebook className="w-6 h-6" color="#1877f2" />
               </a>
             </li>
 
             <li>
-              <a href="">
+              <a href="javascript:void(0)">
                 <FaLinkedin className="w-6 h-6" color="#0077b5" />
               </a>
             </li>
 
             <li>
-              <a href="">
+              <a href="javascript:void(0)">
                 <FaInstagram className="w-6 h-6" color="#c837ab" />
               </a>
             </li>
 
             <li>
-              <a href="">
+              <a href="javascript:void(0)">
                 <BsTwitterX className="w-6 h-6" color="#1da1f2" />
               </a>
             </li>
@@ -59,7 +62,7 @@ function Footer() {
             <div className="bg-gray-900 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
               <BsTelephoneForward className="w-5 h-5" color="#007bff" />
             </div>
-            <a href="" className="text-blue-500 text-sm ml-3">
+            <a href="javascript:void(0)" className="text-blue-500 text-sm ml-3">
               <small className="block">Tel</small>
               <strong>180-548-2588</strong>
             </a>
@@ -68,7 +71,7 @@ function Footer() {
             <div className="bg-gray-900 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
               <CiMail className="w-5 h-5" color="#007bff" />
             </div>
-            <a href="" className="text-blue-500 text-sm ml-3">
+            <a href="javascript:void(0)" className="text-blue-500 text-sm ml-3">
               <small className="block">Mail</small>
               <strong>info@example.com</strong>
             </a>
@@ -77,7 +80,7 @@ function Footer() {
             <div className="bg-gray-900 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
               <IoLocation className="w-5 h-5" color="#007bff" />
             </div>
-            <a href="" className="text-blue-500 text-sm ml-3">
+            <a href="javascript:void(0)" className="text-blue-500 text-sm ml-3">
               <small className="block">Address</small>
               <strong>123 Main Street City, Country</strong>
             </a>
@@ -90,7 +93,7 @@ function Footer() {
           <ul className="flex flex-wrap gap-4">
             <li className="text-sm">
               <a
-                href=""
+                href="javascript:void(0)"
                 className="text-blue-500 font-semibold hover:underline"
               >
                 Terms of Service
@@ -98,7 +101,7 @@ function Footer() {
             </li>
             <li className="text-sm">
               <a
-                href=""
+                href="javascript:void(0)"
                 className="text-blue-500 font-semibold hover:underline"
               >
                 Privacy Policy
@@ -106,7 +109,7 @@ function Footer() {
             </li>
             <li className="text-sm">
               <a
-                href=""
+                href="javascript:void(0)"
                 className="text-blue-500 font-semibold hover:underline"
               >
                 Security
