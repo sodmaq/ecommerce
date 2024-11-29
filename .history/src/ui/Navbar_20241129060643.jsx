@@ -79,7 +79,7 @@ function Navbar() {
                   href="javascript:void(0)"
                   className="text-[#333] hover:text-[#007bff] text-[15px] block font-semibold"
                 >
-                  Blog
+                  Kids
                 </a>
               </li>
             </ul>

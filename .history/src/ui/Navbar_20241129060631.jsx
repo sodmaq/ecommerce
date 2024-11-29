@@ -71,7 +71,7 @@ function Navbar() {
                   href="javascript:void(0)"
                   className="text-[#333] hover:text-[#007bff] text-[15px] block font-semibold"
                 >
-                  Contact
+                  Women
                 </a>
               </li>
               <li className="max-lg:border-b max-lg:py-3 px-3">
@@ -79,7 +79,7 @@ function Navbar() {
                   href="javascript:void(0)"
                   className="text-[#333] hover:text-[#007bff] text-[15px] block font-semibold"
                 >
-                  Blog
+                  Kids
                 </a>
               </li>
             </ul>
