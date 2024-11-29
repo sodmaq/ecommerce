@@ -68,16 +68,16 @@ function Navbar() {
               </li>
               <li className="max-lg:border-b max-lg:py-3 px-3">
                 <a
-                  onClick={() => navigate("/contact")}
-                  className="text-[#333] hover:text-[#007bff] text-[15px] block font-semibold cursor-pointer"
+                  href="javascript:void(0)"
+                  className="text-[#333] hover:text-[#007bff] text-[15px] block font-semibold"
                 >
                   Contact
                 </a>
               </li>
               <li className="max-lg:border-b max-lg:py-3 px-3">
                 <a
-                  onClick={() => navigate("/blog")}
-                  className="text-[#333] hover:text-[#007bff] text-[15px] block font-semibold cursor-pointer"
+                  href="javascript:void(0)"
+                  className="text-[#333] hover:text-[#007bff] text-[15px] block font-semibold"
                 >
                   Blog
                 </a>
