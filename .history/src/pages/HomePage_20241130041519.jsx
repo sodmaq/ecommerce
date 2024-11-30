@@ -1,3 +1,4 @@
+import ProductList from "../features/product/ProductList";
 import ProductPage from "../features/product/ProductPage";
 import Footer from "../ui/Footer";
 import Hero from "../ui/Hero";
