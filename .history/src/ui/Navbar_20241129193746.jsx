@@ -35,6 +35,7 @@ function Navbar() {
             className={`lg:ml-10 ${
               isMenuOpen ? "block" : "hidden"
             } lg:block max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto`}
+            style={{ zIndex: 9999 !important }}
           >
             {/* Close Button for Mobile */}
             <button

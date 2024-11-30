@@ -22,7 +22,7 @@ function Navbar() {
 
   return (
     <div>
-      <header className="flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative z-50">
+      <header className="flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative -z-50">
         <div className="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
           {/* Logo */}
           <NavLink to="/" onClick={handleNavigation} className="cursor-pointer">
@@ -34,7 +34,7 @@ function Navbar() {
             id="collapseMenu"
             className={`lg:ml-10 ${
               isMenuOpen ? "block" : "hidden"
-            } lg:block max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto`}
+            } lg:block max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50`}
           >
             {/* Close Button for Mobile */}
             <button

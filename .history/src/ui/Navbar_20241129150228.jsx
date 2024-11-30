@@ -34,7 +34,7 @@ function Navbar() {
             id="collapseMenu"
             className={`lg:ml-10 ${
               isMenuOpen ? "block" : "hidden"
-            } lg:block max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto`}
+            } lg:block max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50`}
           >
             {/* Close Button for Mobile */}
             <button
@@ -47,7 +47,11 @@ function Navbar() {
 
             <ul className="lg:flex lg:gap-x-3 max-lg:space-y-3">
               <li className="mb-6 hidden max-lg:block">
-                <NavLink to="/" onClick={handleNavigation} className="block">
+                <NavLink
+                  to="/"
+                  onClick={handleNavigation}
+                  className="block border"
+                >
                   <RxSketchLogo
                     className="w-10 h-10 cursor-pointer"
                     color="blue"
@@ -59,7 +63,7 @@ function Navbar() {
                   to="/"
                   onClick={handleNavigation}
                   className={({ isActive }) =>
-                    `text-[15px] block font-semibold cursor-pointer ${
+                    `text-[15px] block font-semibold cursor-pointer border ${
                       isActive
                         ? "text-[#007bff]"
                         : "text-[#333] hover:text-[#007bff]"
@@ -74,7 +78,7 @@ function Navbar() {
                   to="/about"
                   onClick={handleNavigation}
                   className={({ isActive }) =>
-                    `text-[15px] block font-semibold cursor-pointer ${
+                    `text-[15px] block font-semibold cursor-pointer border ${
                       isActive
                         ? "text-[#007bff]"
                         : "text-[#333] hover:text-[#007bff]"
@@ -89,7 +93,7 @@ function Navbar() {
                   to="/contact"
                   onClick={handleNavigation}
                   className={({ isActive }) =>
-                    `text-[15px] block font-semibold cursor-pointer ${
+                    `text-[15px] block font-semibold cursor-pointer border ${
                       isActive
                         ? "text-[#007bff]"
                         : "text-[#333] hover:text-[#007bff]"
@@ -104,7 +108,7 @@ function Navbar() {
                   to="/blog"
                   onClick={handleNavigation}
                   className={({ isActive }) =>
-                    `text-[15px] block font-semibold cursor-pointer ${
+                    `text-[15px] block font-semibold cursor-pointer border ${
                       isActive
                         ? "text-[#007bff]"
                         : "text-[#333] hover:text-[#007bff]"
