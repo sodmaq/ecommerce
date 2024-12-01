@@ -1,3 +1,4 @@
+import React from "react";
 import CartControls from "./CartControls";
 
 function CartItem({ item }) {

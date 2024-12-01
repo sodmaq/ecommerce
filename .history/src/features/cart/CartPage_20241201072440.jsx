@@ -1,3 +1,4 @@
+import React from "react";
 import CartOverview from "./CartOverview";
 
 function CartPage() {

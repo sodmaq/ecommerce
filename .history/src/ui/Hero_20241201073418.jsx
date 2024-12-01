@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Hero() {
   const navigate = useNavigate();
@@ -33,18 +33,20 @@ function Hero() {
             doloribus. Velit officiis iste in veniam et?
           </p>
           <div className="mt-8 flex max-sm:flex-col sm:space-x-4 max-sm:space-y-6">
-            <button
-              className="px-6 py-3 text-base font-semibold text-white bg-[#3532f0] rounded-full hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105 focus:ring-2 focus:ring-[#3532f0] focus:outline-none focus:ring-opacity-50 mx-4"
+            <a
+              href=""
+              className="px-6 py-3 text-base font-semibold text-white bg-[#3532f0] rounded-full hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105 focus:ring-2 focus:ring-[#3532f0]] focus:outline-none focus:ring-opacity-50 mx-4"
               onClick={() => navigate("/products")}
             >
               Explore Our Products
-            </button>
-            <button
-              className="px-6 py-3 text-base font-semibold text-[#3532f0] border border-[#3532f0] rounded-full hover:text-white hover:bg-[#3532f0] transition-all duration-300 transform hover:scale-105 focus:ring-2 focus:ring-[#3532f0] focus:outline-none focus:ring-opacity-50 mx-4"
+            </a>
+            <Link
+              href=""
+              className="px-6 py-3 text-base font-semibold text-[#3532f0] border border-[#3532f0]] rounded-full hover:text-white hover:bg-[#3532f0] transition-all duration-300 transform hover:scale-105 focus:ring-2 focus:ring-[#3532f0] focus:outline-none focus:ring-opacity-50 mx-4"
               onClick={() => navigate("/order")}
             >
               Order Now
-            </button>
+            </Link>
           </div>
         </div>
         <div className="relative md:h-[450px] overflow-hidden">
