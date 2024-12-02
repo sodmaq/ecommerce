@@ -5,7 +5,7 @@ import { addItem } from "../features/cart/CartSlice";
 
 function ProductCard({ product }) {
   const dispatch = useDispatch();
-  const { id, image, name, price, oldPrice } = product;
+  const { image, name, price, oldPrice } = product;
 
   return (
     <div className="bg-gray-200 rounded-xl cursor-pointer hover:scale-[1.03] transition-all relative overflow-hidden">
@@ -31,7 +31,7 @@ function ProductCard({ product }) {
         <h4 className="text-lg text-gray-800 font-bold mt-6">
           ${price.toFixed(2)}{" "}
           <strike className="text-gray-400 ml-2 font-medium">
-            ${oldPrice.toFixed()}
+            ${product.oldPrice.toFixed()}
           </strike>
         </h4>
 

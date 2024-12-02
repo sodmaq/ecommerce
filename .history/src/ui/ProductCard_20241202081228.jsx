@@ -5,7 +5,7 @@ import { addItem } from "../features/cart/CartSlice";
 
 function ProductCard({ product }) {
   const dispatch = useDispatch();
-  const { id, image, name, price, oldPrice } = product;
+  const { image, name, price, oldPrice } = product;
 
   return (
     <div className="bg-gray-200 rounded-xl cursor-pointer hover:scale-[1.03] transition-all relative overflow-hidden">

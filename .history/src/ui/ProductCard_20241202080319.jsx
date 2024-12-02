@@ -4,9 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../features/cart/CartSlice";
 
 function ProductCard({ product }) {
-  const dispatch = useDispatch();
-  const { id, image, name, price, oldPrice } = product;
-
   return (
     <div className="bg-gray-200 rounded-xl cursor-pointer hover:scale-[1.03] transition-all relative overflow-hidden">
       <div className="p-6">
@@ -18,8 +15,8 @@ function ProductCard({ product }) {
         {/* Product Image */}
         <div className="w-2/3 h-[220px] overflow-hidden mx-auto aspect-w-16 aspect-h-8">
           <img
-            src={image}
-            alt={name}
+            src={product.image}
+            alt={product.name}
             className="h-full w-full object-contain"
           />
         </div>
@@ -27,11 +24,11 @@ function ProductCard({ product }) {
 
       {/* Product Info */}
       <div className="text-center bg-gray-100 p-6">
-        <h3 className="text-lg font-bold text-gray-800">{name}</h3>
+        <h3 className="text-lg font-bold text-gray-800">{product.name}</h3>
         <h4 className="text-lg text-gray-800 font-bold mt-6">
-          ${price.toFixed(2)}{" "}
+          ${product.price.toFixed(2)}{" "}
           <strike className="text-gray-400 ml-2 font-medium">
-            ${oldPrice.toFixed()}
+            ${product.oldPrice.toFixed()}
           </strike>
         </h4>
 
