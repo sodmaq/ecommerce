@@ -1,28 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
-  cart: [
-    {
-      id: 1,
-      name: "Velvet Sneaker",
-      price: 18.0,
-      image: "https://readymadeui.com/images/product14.webp",
-      quantity: 1,
-    },
-    {
-      id: 2,
-      name: "Smart Watch Timex",
-      price: 90.0,
-      image: "https://readymadeui.com/images/watch5.webp",
-      quantity: 1,
-    },
-    {
-      id: 3,
-      name: "Sun Glass",
-      price: 30.0,
-      image: "https://readymadeui.com/images/sunglass1.webp",
-      quantity: 1,
-    },
-  ],
+  cart: [],
+  // cart: [
+  //   {
+  //     id: 12,
+  //     name: 'Mediterramean',
+  //     quantity: 2,
+  //     unitPrice: 16,
+  //     totalPrice: 32,
+  //   },
+  // ],
 };
 
 const cartSlice = createSlice({
@@ -30,25 +17,17 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addItem(state, action) {
-      const newItem = action.payload;
-      state.cart.push({
-        ...newItem,
-        unitPrice: newItem.price, // Use the price from payload as unitPrice
-        totalPrice: newItem.price * newItem.quantity, // Compute totalPrice
-      });
+      state.cart.push(action.payload);
+      //state.cart = [...state.cart, action.payload];
     },
-
     deleteItem(state, action) {
       state.cart = state.cart.filter((item) => item.id !== action.payload);
     },
     increaseItemQuantity(state, action) {
       const item = state.cart.find((item) => item.id === action.payload);
-      if (item) {
-        item.quantity = (item.quantity || 1) + 1; // Default quantity to 1 if undefined
-        item.totalPrice = item.quantity * item.unitPrice;
-      }
+      item.quantity++;
+      item.totalPrice = item.quantity * item.unitPrice;
     },
-
     decreaseItemQuantity(state, action) {
       const item = state.cart.find((item) => item.id === action.payload);
       item.quantity--;

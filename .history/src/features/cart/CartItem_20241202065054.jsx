@@ -19,7 +19,7 @@ function CartItem({ item }) {
           </h6>
 
           <div className="flex gap-4 mt-4">
-            <CartControls quantity={item.quantity} id={item.id} />
+            {/* <CartControls quantity={item.quantity} /> */}
           </div>
         </div>
       </div>

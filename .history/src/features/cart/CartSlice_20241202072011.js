@@ -1,28 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
-  cart: [
-    {
-      id: 1,
-      name: "Velvet Sneaker",
-      price: 18.0,
-      image: "https://readymadeui.com/images/product14.webp",
-      quantity: 1,
-    },
-    {
-      id: 2,
-      name: "Smart Watch Timex",
-      price: 90.0,
-      image: "https://readymadeui.com/images/watch5.webp",
-      quantity: 1,
-    },
-    {
-      id: 3,
-      name: "Sun Glass",
-      price: 30.0,
-      image: "https://readymadeui.com/images/sunglass1.webp",
-      quantity: 1,
-    },
-  ],
+  cart: [],
+  // cart: [
+  //   {
+  //     id: 12,
+  //     name: 'Mediterramean',
+  //     quantity: 2,
+  //     unitPrice: 16,
+  //     totalPrice: 32,
+  //   },
+  // ],
 };
 
 const cartSlice = createSlice({
