@@ -6,16 +6,10 @@ import { addItem } from "../features/cart/CartSlice";
 function ProductCard({ product }) {
   const dispatch = useDispatch();
   const { id, image, name, price, oldPrice } = product;
-  const cart = useSelector((state) => state.cart.cart);
 
   function handleAddToCart() {
-    const existingItem = cart.find((item) => item.id === id);
-    if (!existingItem) {
-      const newProduct = { ...product, quantity: 1 };
-      dispatch(addItem(newProduct));
-    } else {
-      alert("Product already in cart");
-    }
+    const newProduct = { ...product, quantity: 1 };
+    dispatch(addItem(newProduct));
   }
 
   return (

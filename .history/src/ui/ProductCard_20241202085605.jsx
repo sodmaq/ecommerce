@@ -6,16 +6,10 @@ import { addItem } from "../features/cart/CartSlice";
 function ProductCard({ product }) {
   const dispatch = useDispatch();
   const { id, image, name, price, oldPrice } = product;
-  const cart = useSelector((state) => state.cart.cart);
 
   function handleAddToCart() {
-    const existingItem = cart.find((item) => item.id === id);
-    if (!existingItem) {
-      const newProduct = { ...product, quantity: 1 };
-      dispatch(addItem(newProduct));
-    } else {
-      alert("Product already in cart");
-    }
+    const newProduct = { ...product, quantity: 1 };
+    dispatch(addItem(newProduct));
   }
 
   return (
@@ -42,7 +36,7 @@ function ProductCard({ product }) {
         <h4 className="text-lg text-gray-800 font-bold mt-6">
           ${price.toFixed(2)}{" "}
           <strike className="text-gray-400 ml-2 font-medium">
-            {oldPrice ? `$${oldPrice.toFixed()}` : ""}
+            ${oldPrice.toFixed()}
           </strike>
         </h4>
 
