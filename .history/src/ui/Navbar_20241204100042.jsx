@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import { GiShoppingCart } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
+import { MdFavoriteBorder } from "react-icons/md";
 import { RxHamburgerMenu, RxSketchLogo } from "react-icons/rx";
 import { getTotalCartQuantity } from "../features/cart/CartSlice";
 import { useSelector } from "react-redux";

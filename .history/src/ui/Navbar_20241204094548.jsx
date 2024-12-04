@@ -3,9 +3,9 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import { GiShoppingCart } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
+import { MdFavoriteBorder } from "react-icons/md";
 import { RxHamburgerMenu, RxSketchLogo } from "react-icons/rx";
 import { getTotalCartQuantity } from "../features/cart/CartSlice";
-import { useSelector } from "react-redux";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -133,7 +133,7 @@ function Navbar() {
 
             <div className="flex items-center space-x-8">
               {/* Favorite Icon */}
-              {/* <span className="relative">
+              <span className="relative">
                 <MdFavoriteBorder
                   className="cursor-pointer fill-[#333] inline"
                   size={25}
@@ -141,7 +141,7 @@ function Navbar() {
                 <span className="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white">
                   0
                 </span>
-              </span> */}
+              </span>
 
               {/* Shopping Cart */}
               <span className="relative">
@@ -151,7 +151,7 @@ function Navbar() {
                   onClick={() => navigate("/cart")}
                 />
                 <span className="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white">
-                  {cartQuantity}
+                  0
                 </span>
               </span>
 

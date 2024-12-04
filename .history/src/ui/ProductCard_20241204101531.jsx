@@ -14,9 +14,8 @@ function ProductCard({ product }) {
     if (!existingItem) {
       const newProduct = { ...product, quantity: 1 };
       dispatch(addItem(newProduct));
-      toast.success("Product added to cart");
     } else {
-      toast.error("Product already in cart");
+      alert("Product already in cart");
     }
   }
 
