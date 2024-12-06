@@ -6,7 +6,6 @@ import { useLocation } from "react-router-dom";
 
 function ProductPage() {
   const [products] = useState(mockProducts);
-  const location = useLocation();
   return (
     <>
       {location.pathname === "/products" && <Navbar />}
