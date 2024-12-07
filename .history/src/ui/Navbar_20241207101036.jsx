@@ -133,7 +133,19 @@ function Navbar() {
             </div>
 
             <div className="flex items-center space-x-8">
+              {/* Favorite Icon */}
+              {/* <span className="relative">
+                <MdFavoriteBorder
+                  className="cursor-pointer fill-[#333] inline"
+                  size={25}
+                />
+                <span className="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white">
+                  0
+                </span>
+              </span> */}
+
               {/* Shopping Cart */}
+
               <span className="relative">
                 <GiShoppingCart
                   className="cursor-pointer fill-[#333] inline"
@@ -142,7 +154,7 @@ function Navbar() {
                     if (cartQuantity > 0) {
                       navigate("/cart");
                     } else {
-                      toast.error("Cart is empty");
+                      console.log("cart is empty");
                     }
                   }}
                 />

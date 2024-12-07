@@ -6,7 +6,6 @@ import { IoCloseOutline } from "react-icons/io5";
 import { RxHamburgerMenu, RxSketchLogo } from "react-icons/rx";
 import { getTotalCartQuantity } from "../features/cart/CartSlice";
 import { useSelector } from "react-redux";
-import toast from "react-hot-toast";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -138,13 +137,7 @@ function Navbar() {
                 <GiShoppingCart
                   className="cursor-pointer fill-[#333] inline"
                   size={25}
-                  onClick={() => {
-                    if (cartQuantity > 0) {
-                      navigate("/cart");
-                    } else {
-                      toast.error("Cart is empty");
-                    }
-                  }}
+                  onClick={() => navigate("/cart")}
                 />
                 <span className="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white">
                   {cartQuantity}

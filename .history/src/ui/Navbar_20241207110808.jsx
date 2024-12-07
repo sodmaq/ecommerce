@@ -142,7 +142,7 @@ function Navbar() {
                     if (cartQuantity > 0) {
                       navigate("/cart");
                     } else {
-                      toast.error("Cart is empty");
+                      console.log("cart is empty");
                     }
                   }}
                 />

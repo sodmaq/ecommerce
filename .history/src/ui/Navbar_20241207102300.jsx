@@ -6,7 +6,6 @@ import { IoCloseOutline } from "react-icons/io5";
 import { RxHamburgerMenu, RxSketchLogo } from "react-icons/rx";
 import { getTotalCartQuantity } from "../features/cart/CartSlice";
 import { useSelector } from "react-redux";
-import toast from "react-hot-toast";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -142,7 +141,7 @@ function Navbar() {
                     if (cartQuantity > 0) {
                       navigate("/cart");
                     } else {
-                      toast.error("Cart is empty");
+                      console.log("cart is empty");
                     }
                   }}
                 />
