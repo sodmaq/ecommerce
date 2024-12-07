@@ -15,7 +15,7 @@ function CartItem({ item }) {
         <div className="w-full">
           <h3 className="text-base font-semibold text-gray-800">{item.name}</h3>
           <h6 className="text-sm text-gray-800 font-bold cursor-pointer mt-0.5">
-            ${item.price.toFixed(2) * item.quantity}
+            ${item.price.toFixed(2) * item.quantity.toFixed(2)}
           </h6>
 
           <div className="flex gap-4 mt-4">
