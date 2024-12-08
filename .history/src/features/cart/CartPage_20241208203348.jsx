@@ -27,7 +27,7 @@ function CartPage() {
             </button>
             <button
               className="mt-4 bg-red-500 text-white py-2 px-4 rounded"
-              onClick={() => navigate(-1)}
+              onClick={() => dispatch(clearCart())}
             >
               back
             </button>

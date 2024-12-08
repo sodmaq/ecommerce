@@ -3,12 +3,10 @@ import CartOverview from "./CartOverview";
 import { useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { clearCart } from "./CartSlice";
-import { useNavigate } from "react-router-dom";
 
 function CartPage() {
   const dispatch = useDispatch();
   const location = useLocation();
-  const navigate = useNavigate();
   return (
     <>
       {location.pathname === "/cart" && <Navbar />}
@@ -27,9 +25,9 @@ function CartPage() {
             </button>
             <button
               className="mt-4 bg-red-500 text-white py-2 px-4 rounded"
-              onClick={() => navigate(-1)}
+              onClick={() => dispatch(clearCart())}
             >
-              back
+              clear cart
             </button>
           </div>
         </div>
