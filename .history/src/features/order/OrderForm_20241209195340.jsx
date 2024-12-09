@@ -33,7 +33,7 @@ function OrderForm() {
     if (isFormComplete) {
       navigate("/payment");
     } else {
-      toast.error("all fields are required");
+      toast.error("Please fill in all required fields.");
     }
   };
 
@@ -41,10 +41,6 @@ function OrderForm() {
   const isFormComplete = Object.values(formData).every(
     (value) => value.trim() !== ""
   );
-
-  function handleCancel() {
-    navigate("/");
-  }
 
   return (
     <div>
@@ -159,12 +155,12 @@ function OrderForm() {
               <button
                 type="button"
                 className="rounded-md px-6 py-3 w-full text-sm tracking-wide bg-transparent hover:bg-gray-100 border border-gray-300 text-gray-800 max-md:order-1"
-                onClick={handleCancel}
               >
                 Cancel
               </button>
               <button
                 type="button"
+                disabled={!isFormComplete} // Disable button if form is incomplete
                 className={`rounded-md px-6 py-3 w-full text-sm tracking-wide ${
                   isFormComplete
                     ? "bg-blue-600 hover:bg-blue-700 text-white"

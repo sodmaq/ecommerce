@@ -42,7 +42,7 @@ function OrderForm() {
     (value) => value.trim() !== ""
   );
 
-  function handleCancel() {
+  function handlecancle() {
     navigate("/");
   }
 

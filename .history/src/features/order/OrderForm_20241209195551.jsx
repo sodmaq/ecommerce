@@ -42,10 +42,6 @@ function OrderForm() {
     (value) => value.trim() !== ""
   );
 
-  function handleCancel() {
-    navigate("/");
-  }
-
   return (
     <div>
       <div className="max-w-4xl w-full h-max rounded-md px-4 py-8 sticky top-0">

@@ -42,10 +42,6 @@ function OrderForm() {
     (value) => value.trim() !== ""
   );
 
-  function handleCancel() {
-    navigate("/");
-  }
-
   return (
     <div>
       <div className="max-w-4xl w-full h-max rounded-md px-4 py-8 sticky top-0">
@@ -159,7 +155,6 @@ function OrderForm() {
               <button
                 type="button"
                 className="rounded-md px-6 py-3 w-full text-sm tracking-wide bg-transparent hover:bg-gray-100 border border-gray-300 text-gray-800 max-md:order-1"
-                onClick={handleCancel}
               >
                 Cancel
               </button>

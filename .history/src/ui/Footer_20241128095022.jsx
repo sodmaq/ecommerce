@@ -248,7 +248,7 @@ function Footer() {
             </li>
           </ul>
           <p className="text-sm text-gray-200 md:ml-auto">
-            © ReadymadeUI. All rights reserved.
+            ©quickBuy. All rights reserved.
           </p>
         </div>
       </footer>
