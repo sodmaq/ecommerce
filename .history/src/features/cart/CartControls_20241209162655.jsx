@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { FiMinus } from "react-icons/fi";
 import { IoIosAdd } from "react-icons/io";
 import { RiDeleteBinLine } from "react-icons/ri";

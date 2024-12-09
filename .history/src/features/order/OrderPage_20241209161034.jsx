@@ -6,12 +6,14 @@ import {
   getCart,
   getTotalCartPrice,
   clearCart,
+  getCart,
 } from "../../features/cart/CartSlice";
 import { addOrder } from "./OrderSlice";
 
 function OrderPage() {
   const location = useLocation();
   const dispatch = useDispatch();
+  const cartItems = useSelector(getCart);
 
   // Fetch cart data and total price from Redux store
   const cartItems = useSelector(getCart); // Get all cart items
@@ -88,12 +90,6 @@ function OrderPage() {
             <OrderForm />
           </div>
         </div>
-        {/* <button
-          onClick={handlePlaceOrder}
-          className="bg-green-500 text-white px-4 py-2 rounded"
-        >
-          Place Order
-        </button> */}
       </div>
     </>
   );

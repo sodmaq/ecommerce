@@ -6,30 +6,16 @@ import {
   getCart,
   getTotalCartPrice,
   clearCart,
+  getCart,
 } from "../../features/cart/CartSlice";
 import { addOrder } from "./OrderSlice";
 
 function OrderPage() {
   const location = useLocation();
-  const dispatch = useDispatch();
 
   // Fetch cart data and total price from Redux store
   const cartItems = useSelector(getCart); // Get all cart items
   const totalPrice = useSelector(getTotalCartPrice); // Get total cart price
-  const handlePlaceOrder = () => {
-    if (cartItems.length === 0) {
-      alert("Your cart is empty!");
-      return;
-    }
-
-    // Dispatch the order
-    dispatch(addOrder({ items: cartItems, date: new Date().toISOString() }));
-
-    // Clear the cart
-    dispatch(clearCart());
-
-    alert("Order placed successfully!");
-  };
 
   return (
     <>
@@ -88,12 +74,6 @@ function OrderPage() {
             <OrderForm />
           </div>
         </div>
-        {/* <button
-          onClick={handlePlaceOrder}
-          className="bg-green-500 text-white px-4 py-2 rounded"
-        >
-          Place Order
-        </button> */}
       </div>
     </>
   );

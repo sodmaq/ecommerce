@@ -16,20 +16,20 @@ function OrderPage() {
   // Fetch cart data and total price from Redux store
   const cartItems = useSelector(getCart); // Get all cart items
   const totalPrice = useSelector(getTotalCartPrice); // Get total cart price
-  const handlePlaceOrder = () => {
-    if (cartItems.length === 0) {
-      alert("Your cart is empty!");
-      return;
-    }
+  //   const handlePlaceOrder = () => {
+  //     if (cartItems.length === 0) {
+  //       alert("Your cart is empty!");
+  //       return;
+  //     }
 
-    // Dispatch the order
-    dispatch(addOrder({ items: cartItems, date: new Date().toISOString() }));
+  //     // Dispatch the order
+  //     dispatch(addOrder({ items: cartItems, date: new Date().toISOString() }));
 
-    // Clear the cart
-    dispatch(clearCart());
+  //     // Clear the cart
+  //     dispatch(clearCart());
 
-    alert("Order placed successfully!");
-  };
+  //     alert("Order placed successfully!");
+  //   };
 
   return (
     <>

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { GiLoveHowl } from "react-icons/gi";
 import { TiShoppingCart } from "react-icons/ti";
 import { useDispatch, useSelector } from "react-redux";

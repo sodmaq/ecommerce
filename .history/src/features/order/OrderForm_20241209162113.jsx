@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 function OrderForm() {
-  const navigate = useNavigate();
   return (
     <div>
       <div className="max-w-4xl w-full h-max rounded-md px-4 py-8 sticky top-0">
@@ -88,7 +87,7 @@ function OrderForm() {
               <button
                 type="button"
                 className="rounded-md px-6 py-3 w-full text-sm tracking-wide bg-blue-600 hover:bg-blue-700 text-white"
-                onClick={() => navigate("/payment")}
+                onClick={() => {}
               >
                 Make Payment
               </button>

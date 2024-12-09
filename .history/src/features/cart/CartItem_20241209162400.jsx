@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import CartControls from "./CartControls";
+
 function CartItem({ item }) {
   return (
     <>
