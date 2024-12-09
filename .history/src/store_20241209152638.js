@@ -4,7 +4,6 @@ import orderReducer from "./features/order/OrderSlice";
 const store = configureStore({
   reducer: {
     cart: cartReducer,
-    order: orderReducer,
   },
 });
 

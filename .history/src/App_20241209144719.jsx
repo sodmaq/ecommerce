@@ -7,7 +7,6 @@ import Contact from "./pages/Contact";
 import ProductPage from "./features/product/ProductPage";
 import CartPage from "./features/cart/CartPage";
 import { Toaster } from "react-hot-toast";
-import OrderPage from "./features/order/OrderPage";
 
 function App() {
   return (
@@ -19,8 +18,8 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<ProductPage />} />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path="/order" element={<OrderPage />} />
+          <Route path="cart" element={<CartPage />} />
+          <Route path="cart" element={<CartPage />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

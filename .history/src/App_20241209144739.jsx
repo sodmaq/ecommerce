@@ -19,8 +19,8 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<ProductPage />} />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path="/order" element={<OrderPage />} />
+          <Route path="cart" element={<CartPage />} />
+          <Route path="order" element={<OrderPage />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
