@@ -7,7 +7,7 @@ function LoginForm() {
         <div className="grid md:grid-cols-2 items-center gap-8">
           <div className="max-md:order-1 lg:min-w-[450px]">
             <img
-              src="/signin-image.webp"
+              src="https://readymadeui.com/signin-image.webp"
               className="lg:w-11/12 w-full object-cover"
               alt="login-image"
             />

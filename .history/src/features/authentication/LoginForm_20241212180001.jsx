@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 function LoginForm() {
   return (
     <div className="font-[sans-serif] bg-white flex items-center justify-center md:h-screen p-4">
@@ -7,7 +5,7 @@ function LoginForm() {
         <div className="grid md:grid-cols-2 items-center gap-8">
           <div className="max-md:order-1 lg:min-w-[450px]">
             <img
-              src="/signin-image.webp"
+              src="https://readymadeui.com/signin-image.webp"
               className="lg:w-11/12 w-full object-cover"
               alt="login-image"
             />
@@ -117,12 +115,12 @@ function LoginForm() {
               </button>
               <p className="text-gray-800 text-sm text-center mt-6">
                 Don't have an account{" "}
-                <Link
-                  to="/register"
-                  className="text-blue-500 font-semibold hover:underline ml-2 "
+                <a
+                  href="#"
+                  className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap"
                 >
-                  Sign up
-                </Link>
+                  Register here
+                </a>
               </p>
             </div>
           </form>

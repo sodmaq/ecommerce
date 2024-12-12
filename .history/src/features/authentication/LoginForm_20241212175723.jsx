@@ -1,13 +1,19 @@
-import { Link } from "react-router-dom";
-
 function LoginForm() {
   return (
     <div className="font-[sans-serif] bg-white flex items-center justify-center md:h-screen p-4">
       <div className="shadow-[0_2px_16px_-3px_rgba(6,81,237,0.3)] max-w-6xl max-md:max-w-lg rounded-md p-6">
+        <a href="javascript:void(0)">
+          <img
+            src="https://readymadeui.com/readymadeui.svg"
+            alt="logo"
+            className="w-40 md:mb-4 mb-12"
+          />
+        </a>
+
         <div className="grid md:grid-cols-2 items-center gap-8">
           <div className="max-md:order-1 lg:min-w-[450px]">
             <img
-              src="/signin-image.webp"
+              src="https://readymadeui.com/signin-image.webp"
               className="lg:w-11/12 w-full object-cover"
               alt="login-image"
             />
@@ -92,20 +98,20 @@ function LoginForm() {
                   className="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                 />
                 <label
-                  htmlFor="remember-me"
+                  for="remember-me"
                   className="text-gray-800 ml-3 block text-sm"
                 >
                   Remember me
                 </label>
               </div>
-              {/* <div>
+              <div>
                 <a
                   href="jajvascript:void(0);"
                   className="text-blue-600 font-semibold text-sm hover:underline"
                 >
                   Forgot Password?
                 </a>
-              </div> */}
+              </div>
             </div>
 
             <div className="mt-12">
@@ -117,12 +123,12 @@ function LoginForm() {
               </button>
               <p className="text-gray-800 text-sm text-center mt-6">
                 Don't have an account{" "}
-                <Link
-                  to="/register"
-                  className="text-blue-500 font-semibold hover:underline ml-2 "
+                <a
+                  href="javascript:void(0);"
+                  className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap"
                 >
-                  Sign up
-                </Link>
+                  Register here
+                </a>
               </p>
             </div>
           </form>
