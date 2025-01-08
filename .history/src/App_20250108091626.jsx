@@ -28,6 +28,7 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
+
       <Toaster
         position="top-center"
         gutter={16} // Increase spacing between toasts for better visibility
